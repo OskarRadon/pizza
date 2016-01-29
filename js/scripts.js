@@ -7,16 +7,15 @@ function Pizza(size, toppings, quantity) {
 Pizza.prototype.generatePrice = function() {
   var price = 0;
   if (this.size === "large") {
-    price = 15;
+    price += 15;
   }
   if (this.size === "medium") {
-    price = 15;
+    price += 12;
   }
   if (this.size === "small") {
-    price = 15;
+    price += 8;
   }
-  return (price + this.toppings) * this.quantity;
-
+  return price;
 }
 
 Pizza.prototype.errorChecker = function() {
