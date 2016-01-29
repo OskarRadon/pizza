@@ -8,14 +8,6 @@ describe ("Pizza", function() {
 });
 
 describe ("generatePrice", function() {
-  it ("will generate price based on size", function() {
-    var testPizza = new Pizza("large");
-    expect(testPizza.generatePrice()).to.equal(15);
-  });
-  it ("will generate price based on size and number of toppings", function() {
-    var testPizza = new Pizza("medium", 2);
-    expect(testPizza.generatePrice()).to.equal(18);
-  });
   it ("will generate price based on size, number of toppings, and quantity", function() {
     var testPizza = new Pizza("medium", 2, 3);
     expect(testPizza.generatePrice()).to.equal(54);
