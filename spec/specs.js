@@ -1,7 +1,22 @@
 describe ("Pizza", function() {
-  it ("will generate pizza price based on pizza size and toppings", function () {
-    var testPizza = new Pizza("large", 5);
+  it ("will make new Pizza object with size and toppings", function () {
+    var testPizza = new Pizza("large", 5, 2);
     expect(testPizza.size).to.equal("large");
     expect(testPizza.toppings).to.equal(5);
+    expect(testPizza.quantity).to.equal(2);
   });
 });
+
+describe ("Pizza.generatePrice", function() {
+  it ("will generate price based on size", function() {
+    var testPizza = new Pizza("large");
+    expect(testPizza.generatePrice()).to.equal(15);
+  });
+  // it ("will generate price based on size and number of toppings", function() {
+  //
+  // });
+});
+
+// describe ("Pizza.errorChecker", function() {
+//
+// });
