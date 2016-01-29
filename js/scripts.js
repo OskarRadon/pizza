@@ -33,4 +33,9 @@ $(function(){
     $("span#price").text("$" + newPizza.generatePrice() + (".00"));
     $("#result").show();
   });
+  
+  $("form#reload").submit(function(event) {
+    event.preventDefault();
+    window.location.reload();
+  });
 });
