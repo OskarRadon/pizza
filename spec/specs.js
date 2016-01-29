@@ -16,6 +16,10 @@ describe ("generatePrice", function() {
     var testPizza = new Pizza("medium", 2);
     expect(testPizza.generatePrice()).to.equal(18);
   });
+  it ("will generate price based on size, number of toppings, and quantity", function() {
+    var testPizza = new Pizza("medium", 2, 3);
+    expect(testPizza.generatePrice()).to.equal(54);
+  });
 });
 
 // describe ("Pizza.errorChecker", function() {

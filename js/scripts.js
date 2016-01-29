@@ -9,6 +9,7 @@ Pizza.prototype.generatePrice = function() {
   for (var i = 0; i < this.toppings; i++) {
     price += 3;
   }
+
   if (this.size === "large") {
     price += 15;
   }
@@ -18,7 +19,7 @@ Pizza.prototype.generatePrice = function() {
   if (this.size === "small") {
     price += 8;
   }
-  return price;
+  return price * this.quantity;
 }
 
 Pizza.prototype.errorChecker = function() {
