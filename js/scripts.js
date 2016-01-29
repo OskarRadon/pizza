@@ -21,7 +21,3 @@ Pizza.prototype.generatePrice = function() {
   }
   return price * this.quantity;
 }
-
-Pizza.prototype.errorChecker = function() {
-
-}

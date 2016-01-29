@@ -13,7 +13,3 @@ describe ("generatePrice", function() {
     expect(testPizza.generatePrice()).to.equal(54);
   });
 });
-
-// describe ("Pizza.errorChecker", function() {
-//
-// });
