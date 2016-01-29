@@ -22,9 +22,13 @@ body {
 }
 
 .btn {
-  background-color: #EFE6DD;
+  background-color: #7EBDC2;
 }
 
 .btn:hover {
-  background-color: #7EBDC2;
+  background-color: #96E2E8;
+}
+
+.btn.reload {
+  margin: 10px;
 }
