@@ -30,7 +30,7 @@ $(function(){
     var quantityChoice = $("input#quantity").val();
     var newPizza = new Pizza(sizeChoice, toppingAmount, quantityChoice);
 
-    $("span#result").text("$" + newPizza.generatePrice() + (".00"));
-
+    $("span#price").text("$" + newPizza.generatePrice() + (".00"));
+    $("#result").show();
   });
 });
