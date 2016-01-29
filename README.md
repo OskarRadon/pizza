@@ -6,7 +6,7 @@
 
 ## Description
 
-_A website for a pizza company where a user can order a pizza and see the final cost. Check it out here on Github Pages._
+_A website for a pizza company where a user can order a pizza and see the final cost. Check it out [here](http://oskarradon.github.io/pizza/) on Github Pages._
 
 ## Technologies Used
 
