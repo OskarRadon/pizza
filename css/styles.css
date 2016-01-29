@@ -1,13 +1,30 @@
-.jumbotron h1 {
-  text-align: center;
-  color: black;
+body {
+  background-color: #BB4430;
+  color: #231F20;
 }
 
 .jumbotron {
-  background-image: url(../img/pizza1.jpg);
-  background-size: 100%;
+  background-color: #7EBDC2;
+}
+
+.jumbotron h1 {
+  text-align: center;
+  color: #231F20;
 }
 
 #result {
   display: none;
+}
+
+.col-md-6 {
+  background-color: #F3DFA2;
+  padding :50px;
+}
+
+.btn {
+  background-color: #EFE6DD;
+}
+
+.btn:hover {
+  background-color: #7EBDC2;
 }
