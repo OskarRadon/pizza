@@ -10,14 +10,25 @@ Pizza.prototype.generatePrice = function() {
     price += 3;
   }
 
-  if (this.size === "large") {
+  if (this.size === "Large") {
     price += 15;
   }
-  if (this.size === "medium") {
+  if (this.size === "Medium") {
     price += 12;
   }
-  if (this.size === "small") {
+  if (this.size === "Small") {
     price += 8;
   }
   return price * this.quantity;
 }
+
+$(function(){
+  $("form#pizzaOrder").submit(function(event) {
+    event.preventDefault();
+    var sizeChoice = $("select#size").val();
+    var toppingAmount =
+    var quantityChoice =
+    console.log(sizeChoice);
+
+  });
+});
