@@ -26,9 +26,11 @@ $(function(){
   $("form#pizzaOrder").submit(function(event) {
     event.preventDefault();
     var sizeChoice = $("select#size").val();
-    var toppingAmount =
-    var quantityChoice =
-    console.log(sizeChoice);
+    var toppingAmount = $("input#toppings").val();
+    var quantityChoice = $("input#quantity").val();
+    var newPizza = new Pizza(sizeChoice, toppingAmount, quantityChoice);
+
+    $("span#result").text("$" + newPizza.generatePrice() + (".00"));
 
   });
 });
