@@ -12,9 +12,10 @@ describe ("generatePrice", function() {
     var testPizza = new Pizza("large");
     expect(testPizza.generatePrice()).to.equal(15);
   });
-  // it ("will generate price based on size and number of toppings", function() {
-  //
-  // });
+  it ("will generate price based on size and number of toppings", function() {
+    var testPizza = new Pizza("medium", 2);
+    expect(testPizza.generatePrice()).to.equal(18);
+  });
 });
 
 // describe ("Pizza.errorChecker", function() {
